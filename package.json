@@ -58,6 +58,7 @@
     "marked-terminal": "^1.6.1",
     "nconf": "^0.12.0",
     "npm-latest": "^1.0.1",
+    "openai": "^3.0.0",
     "openurl": "^1.1.1",
     "request": "^2.88.2",
     "semver": "5.1.0",
@@ -97,6 +98,8 @@
     "parserOptions": {
       "ecmaVersion": "latest"
     },
-    "rules": {}
+    "rules": {
+        "new-cap": "off"
+    }
   }
 }
