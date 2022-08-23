@@ -1,8 +1,8 @@
 {
   "name": "how2",
-  "author": "Claudio Santini <hireclaudio@gmail.com> (https://www.linkedin.com/in/santinic)",
+  "author": "Claudio Santini <hireclaudio@gmail.com> (https://claudio.uk)",
   "version": "1.9.5",
-  "description": "Uses Google and Stackoverflow to find how to do things on a Unix command line",
+  "description": "Uses Google and Stackoverflow to find how to do things on a Unix command line. Now supports OpenAI Codex too.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -18,21 +18,23 @@
     "how2",
     "howto",
     "man",
-    "google",
     "stackoverflow",
     "stack overflow",
     "stackexchange",
-    "stack exchange"
+    "stack exchange",
+    "openai",
+    "codex"
   ],
   "tags": [
     "how2",
     "howto",
     "man",
-    "google",
     "stackoverflow",
     "stack overflow",
     "stackexchange",
-    "stack exchange"
+    "stack exchange",
+    "openai",
+    "codex"
   ],
   "homepage": "https://github.com/santinic/how2/",
   "preferGlobal": true,
@@ -52,6 +54,7 @@
     "colors": "^1.4.0",
     "ent": "^2.2.0",
     "google-it": "^1.6.3",
+    "inquirer": "^8.0.0",
     "keypress": "^0.2.1",
     "lodash": "^4.17.21",
     "marked": "^4.0.18",
@@ -84,7 +87,9 @@
       "node": true,
       "jest": true
     },
-    "extends": "standard",
+    "extends": [
+      "standard"
+    ],
     "overrides": [
       {
         "files": [
@@ -99,7 +104,7 @@
       "ecmaVersion": "latest"
     },
     "rules": {
-        "new-cap": "off"
+      "new-cap": "off"
     }
   }
 }
